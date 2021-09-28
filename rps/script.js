@@ -6,6 +6,7 @@ function toggleDark() {
     document.getElementById("title"),
     document.getElementById("button-container"),
     document.getElementById("cpu-result"),
+    document.getElementById("unsupported"),
     document.getElementById("main"),
     document.getElementById("win"),
     document.getElementById("tie"),

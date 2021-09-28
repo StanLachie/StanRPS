@@ -122,7 +122,7 @@ body {
 
   width: 150px;
   height: 150px;
-  margin: 25px;
+  margin: 20px;
 
   cursor: pointer;
   user-select: none;
@@ -141,7 +141,7 @@ body {
 
   width: 150px;
   height: 150px;
-  margin: 25px;
+  margin: 20px;
 
   cursor: pointer;
   user-select: none;
@@ -213,10 +213,26 @@ body {
   background-color: var(--button-hover-dark);
 }
 
+#unsupported {
+  display: none;
+  flex-direction: column;
+
+  padding: 5px;
+  margin: 10%;
+
+  box-shadow: 0 2px 20px 2px #000;
+
+  text-align: center;
+}
+
 @media only screen and (max-width: 850px) {
   #button-container {
-    width: 80%;
+    width: 95%;
   }
+  #light-switch {
+    padding: 5px;
+  }
+
   #reset-button {
     font-size: 40px;
 
@@ -230,8 +246,8 @@ body {
   .enemy-button {
     position: relative;
 
-    width: 75px;
-    height: 75px;
+    width: 110px;
+    height: 110px;
 
     border-radius: 50%;
   }
@@ -245,6 +261,63 @@ body {
     transform: translate(-50%, -50%);
   }
   .red-button {
+    border: 25px inset var(--red-button);
+  }
+  .blue-button {
+    border: 25px inset var(--blue-button);
+  }
+  .green-button {
+    border: 25px inset var(--green-button);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #reset-button {
+    font-size: 40px;
+    width: 200px;
+    height: 75px;
+    margin: 50px;
+  }
+  .button,
+  .button-copy,
+  .enemy-button {
+    position: relative;
+
+    width: 110px;
+    height: 110px;
+    margin: 20px;
+
+    border-radius: 50%;
+  }
+  .red-button {
+    border: 20px inset var(--red-button);
+  }
+  .blue-button {
+    border: 20px inset var(--blue-button);
+  }
+  .green-button {
+    border: 20px inset var(--green-button);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #reset-button {
+    font-size: 40px;
+    width: 200px;
+    height: 75px;
+    margin: 50px;
+  }
+  .button,
+  .button-copy,
+  .enemy-button {
+    position: relative;
+
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+  }
+  .red-button {
     border: 15px inset var(--red-button);
   }
   .blue-button {
@@ -255,10 +328,36 @@ body {
   }
 }
 
-@media only screen and (max-width: 750px) {
-  #button-container {
-    width: 90%;
+@media only screen and (max-width: 550px) {
+  #reset-button {
+    font-size: 40px;
+    width: 200px;
+    height: 75px;
+    margin: 50px;
   }
+  .button,
+  .button-copy,
+  .enemy-button {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+    border-radius: 50%;
+  }
+  .red-button {
+    border: 10px inset var(--red-button);
+  }
+  .blue-button {
+    border: 10px inset var(--blue-button);
+  }
+  .green-button {
+    border: 10px inset var(--green-button);
+  }
+}
+
+@media only screen and (max-width: 400px) {
   #reset-button {
     font-size: 40px;
     width: 200px;
@@ -272,47 +371,32 @@ body {
 
     width: 75px;
     height: 75px;
+    margin: 10px;
 
     border-radius: 50%;
   }
   .red-button {
-    border: 15px inset var(--red-button);
+    border: 7px inset var(--red-button);
   }
   .blue-button {
-    border: 15px inset var(--blue-button);
+    border: 7px inset var(--blue-button);
   }
   .green-button {
-    border: 15px inset var(--green-button);
+    border: 7px inset var(--green-button);
   }
 }
 
-@media only screen and (max-width: 500px) {
-  #button-container {
-    width: 90%;
+@media only screen and (max-width: 318px) {
+  #main {
+    display: none;
   }
-  #reset-button {
-    font-size: 40px;
-    width: 200px;
-    height: 75px;
-    margin: 50px;
+  #title {
+    margin-left: 10px;
   }
-  .button,
-  .button-copy,
-  .enemy-button {
-    position: relative;
-
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
+  #light-switch {
+    margin-right: 10px;
   }
-  .red-button {
-    border: 10px inset var(--red-button);
-  }
-  .blue-button {
-    border: 10px inset var(--blue-button);
-  }
-  .green-button {
-    border: 10px inset var(--green-button);
+  #unsupported {
+    display: flex;
   }
 }
