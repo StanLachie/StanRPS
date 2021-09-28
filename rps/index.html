@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Web Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="header" class="secondary-light">
+      <h1 id="title" class="secondary-light">StanRPS</h1>
+      <div
+        id="light-switch"
+        class="button-light button-hover-light"
+        onclick="toggleDark()"
+      >
+        Toggle Dark
+      </div>
+    </header>
+    <main id="main" class="secondary-light">
+      <section id="cpu-result-container">
+        <h2 id="cpu-result" class="secondary-light">
+          Click An Icon Below To Get Started!
+        </h2>
+      </section>
+      <section id="button-container" class="secondary-light">
+        <div id="rock" class="button red-button" onclick="runRps(0)">
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-rock.svg"
+            class="icons"
+          />
+        </div>
+        <div id="paper" class="button blue-button" onclick="runRps(1)">
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-paper.svg"
+            class="icons"
+          />
+        </div>
+        <div id="scissors" class="button green-button" onclick="runRps(2)">
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-scissors.svg"
+            class="icons"
+          />
+        </div>
+        <div id="rock-copy" class="button-copy red-button" onclick="resetRps()">
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-rock.svg"
+            class="icons"
+          />
+        </div>
+        <div
+          id="paper-copy"
+          class="button-copy blue-button"
+          onclick="resetRps()"
+        >
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-paper.svg"
+            class="icons"
+          />
+        </div>
+        <div
+          id="scissors-copy"
+          class="button-copy green-button"
+          onclick="resetRps()"
+        >
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-scissors.svg"
+            class="icons"
+          />
+        </div>
+        <div
+          id="reset-button"
+          class="button-light button-hover-light"
+          onclick="resetRps()"
+        >
+          Reset
+        </div>
+        <div
+          id="enemy-rock"
+          class="enemy-button red-button"
+          onclick="resetRps()"
+        >
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-rock.svg"
+            class="icons"
+          />
+        </div>
+        <div
+          id="enemy-paper"
+          class="enemy-button blue-button"
+          onclick="resetRps()"
+        >
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-paper.svg"
+            class="icons"
+          />
+        </div>
+        <div
+          id="enemy-scissors"
+          class="enemy-button green-button"
+          onclick="resetRps()"
+        >
+          <img
+            src="https://raw.githubusercontent.com/StanLachie/StanLachie.github.io/6387fc24e80342ec47da0031ff979eb86bba0c91/icon-scissors.svg"
+            class="icons"
+          />
+        </div>
+      </section>
+      <div class="stats">
+        <h3 id="win" class="secondary-light">Wins: 0</h3>
+        <h3 id="tie" class="secondary-light">Ties: 0</h3>
+        <h3 id="lose" class="secondary-light">Loses: 0</h3>
+      </div>
+    </main>
+  </body>
+</html>
