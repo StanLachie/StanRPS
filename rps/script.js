@@ -14,12 +14,6 @@ function toggleDark() {
   ];
   const buttonElements = [
     document.getElementById("light-switch"),
-    document.getElementById("rock"),
-    document.getElementById("paper"),
-    document.getElementById("scissors"),
-    document.getElementById("rock-copy"),
-    document.getElementById("paper-copy"),
-    document.getElementById("scissors-copy"),
     document.getElementById("reset-button"),
   ];
 
@@ -27,10 +21,13 @@ function toggleDark() {
     secondaryElements[i].classList.toggle("secondary-light");
     secondaryElements[i].classList.toggle("secondary-dark");
   }
-  buttonElements[(7, 0)].classList.toggle("button-light");
-  buttonElements[(7, 0)].classList.toggle("button-dark");
-  buttonElements[(7, 0)].classList.toggle("button-hover-light");
-  buttonElements[(7, 0)].classList.toggle("button-hover-dark");
+  for (var i = 0; i < buttonElements.length; i++) {
+    buttonElements[i].classList.toggle("button-light");
+    buttonElements[i].classList.toggle("button-dark");
+    buttonElements[i].classList.toggle("button-hover-light");
+    buttonElements[i].classList.toggle("button-hover-dark");
+  }
+  
 }
 
 let wins = 0;
